@@ -1,0 +1,18 @@
+.main-list{
+    font-size: 30px ;
+    font-family:Arial, Helvetica, sans-serif ;
+    /* text-decoration-line: underline; */
+    text-decoration-style: double;
+    list-style-image: -moz-linear-gradient();
+}
+a:visited{
+    color:black;
+    text-decoration-line:none;
+    font-weight:
+}
+a:hover{
+    color:blue;
+    cursor: crosshair;
+    text-decoration-line:
+    font-style:
+}

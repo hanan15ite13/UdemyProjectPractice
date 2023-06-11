@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+    font-family: 'Mukta', sans-serif;
+}
+.flexBoxExample{
+    background-color: #862ae8;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bitter', serif;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 32px;
+}
+.container .info{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.info span{
+    color: #e95400;
+}
+.container .headline{
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: 0.5px;
+font-size: 18px;
+}
+.container blockquote{
+    font-style: italic;
+    border-left: 2px solid red;
+    font-size: 16px;
+    padding: 20px;
+    /* margin-left: 20px; */
+    font-weight: bold;
+}
+.container blockquote cite{
+    display: block;
+    padding-left: 9px;
+    font-weight: bolder;
+}
+.container p{
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    /* line-height: 20px; */
+}
+.container h3{
+    font-size: 30px;
+    font-weight: 500px;
+}
+.container h4{
+font-size:28px ;
+font-weight: 400px ;
+}
+.container h5{
+font-size: 26px;
+font-weight: 300 ;
+}
+.container h6{
+font-weight: 200;
+font-size: 24px;
+}
+.container code{
+    color: red;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+}
+footer ul{
+    background-color: blue;
+height: 80px;
+text-align: center;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-top: 40px;
+}
+footer ul li{
+    display: inline;
+    
+    
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+ font-size: 20px;
+    padding-left: 20px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}

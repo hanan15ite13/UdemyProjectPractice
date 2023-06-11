@@ -1,0 +1,297 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.main-container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.right img{
+    height: 24px;
+    width: 24px;
+}
+.navbar{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+    padding: 60px 0px;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin: -26px;
+}
+.navbar .right a{
+    color:black;
+    text-decoration-line: none;
+    margin: 20px;
+}
+.navbar .left{
+    font-weight: bold;
+}
+.navbar .right a:hover{
+    text-decoration: underline;
+}
+
+.grid-project{
+    display: grid;
+    grid-template-areas:  "eth eth alphabet"
+    "eth eth traveler"
+    "cube astro traveler"
+    "cup insta insta"
+    "foam foam dimensional";
+    row-gap: 16px;
+    column-gap: 16px;
+}
+.left span{
+    font-size: 1rem;
+    margin: 20px;
+}
+#eth{
+    grid-area: eth;
+}
+#alphabet{
+    grid-area: alphabet;
+}
+#cube{
+    grid-area: cube;
+}
+#traveler{
+    grid-area: traveler;
+}
+#astro{
+    grid-area: astro;
+}
+#cup{
+    grid-area: cup;
+}
+#insta{
+    grid-area: insta;
+}
+#foam{
+    grid-area: foam;
+}
+#dimensional{
+    grid-area: dimensional;
+}
+.container{
+    margin: 0px;
+    position: relative; 
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+.overlay{
+    margin: 0px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+font-size: 3rem;
+font-weight: bold;
+background-color: rgba(255, 255, 255, 0.1);
+opacity:0;
+transition: all 0.3s ease;
+letter-spacing: 2px;
+}
+.container .overlay:hover{
+    opacity: 1;
+}
+.footer{
+    text-align: center;
+    margin: 24px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.hamburg{
+    display: none;
+}
+.hamburg .bar{
+height: 6px;
+width: 50px;
+background-color: black;
+margin: 8px;
+border-radius: 12px;
+}
+
+@media only screen and (max-width:1200px){
+    .grid-project{
+        grid-template-areas:  "eth eth eth"
+    "cube alphabet traveler"
+    "astro cup cup"
+    "insta insta insta"
+    "foam foam foam"
+    "dimensional dimensional dimensional";
+    }
+    .container .overlay{
+        font-size: 1.5rem;
+        
+    }
+    body{
+        margin: 0px;
+    }
+}
+@media only screen and (max-width:900px){
+    .grid-project{
+        grid-template-areas:  "eth eth"
+    "cube alphabet"
+    "astro cup"
+    "insta insta"
+    "foam traveler"
+    "dimensional dimensional";
+    }
+   .overlay{
+        font-size: 1px;
+        letter-spacing: 0px;
+        color: white;
+        
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        position: relative;
+    }
+    /* .left span{
+        position: relative;
+    } */
+    .hamburg {
+        display: block;
+        position: absolute;
+    width: 100%;
+    left: 90%;
+    box-sizing: border-box;
+
+    }
+    .navbar{
+        position: fixed;
+        z-index: 3;
+        top: 0px;
+        height: 40px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .grid-project{
+        width: 100%;
+        margin-top: 171px;
+        padding: 0px;
+    }
+    body{
+        margin: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .main-container{
+        max-width: 100%;
+    }
+
+}
+@keyframes bar1rotate{
+    form{
+transform: rotate(0deg);
+    }
+    to{
+transform:rotate(45deg) translateY(20px);
+    }
+}
+@keyframes bar2disappear{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes bar3rotate{
+    form{
+transform: rotate(0deg) ;
+    }
+    to{
+transform:rotate(-45deg) translateY(-20px);
+    }
+}
+/* .hamburg .bar:nth-of-type(1){
+    animation-name: bar1rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.hamburg .bar:nth-of-type(2){
+    animation-name: bar2disappear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.hamburg .bar:nth-of-type(3){
+    animation-name: bar3rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+} */
+.animationBar1{
+    animation-name: bar1rotate;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+.animationBar2{
+    animation-name: bar2disappear;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+
+}
+.animationBar3{
+    animation-name: bar3rotate;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+.mobile-navbar img{
+width: 24px;
+height: 24px;
+}
+.mobile-navbar{
+    width:150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    right: -160px;
+    z-index: 2;
+    justify-content: center;
+    transition: all 0.5s;
+}
+    /* animation-name: clickHamburg;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+} */
+.clickhamburg{
+    transform: translateX(-160px);
+}
+.mobile-navbar a{
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+}
+.mobile-navbar a:hover{
+    text-decoration: underline;
+}

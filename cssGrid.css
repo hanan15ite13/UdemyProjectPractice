@@ -1,0 +1,64 @@
+body{
+    background: #D38312;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.container{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    top: 200px;
+    left:00px;
+
+    display: grid;
+    /* This is for assigning the column and row names to the our box */
+    grid-template-columns:[col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end col4-start] 1fr [col4-end];
+    grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end row3-start] 1fr [col3-end col4-end] 1fr [col4-end];
+    border: 1px solid black;
+    grid-template-areas: "navbar navbar navbar navbar "
+                          "content content content sidebar "
+                          "content content content sidebar "
+                          "footer footer footer sidebar";
+                        
+
+}
+.thing{
+    text-align: center;
+    color: wheat;
+    font-size: 3rem;
+    font-weight: bold;
+    /* this is for the gird item property */
+    /* grid-column-start: 5;
+    grid-column-end: -6;
+grid-row-start: 5;
+grid-row-end: 8; */
+/* this is for span property */
+/* grid-column-start: 2;
+grid-column-end: span 3;
+grid-row-start: 3;
+grid-row-end:span 4 */
+/* This is the short hand property that are used in the above example */
+/* grid-column: 3/span 2;
+grid-row: 3/span 4; */
+/* grid-area:rowstart/columnstart/rowend/columnend */
+/* grid-area: 3/3/5/5; */
+/* grid-column-start: col2-start;
+grid-column-end: col3-end;
+grid-row-start: row2-start;
+grid-row-end: row3-start; */
+text-transform: uppercase;
+}
+.box1{
+    grid-area: navbar;
+}
+.box2{
+    grid-area: sidebar;
+}
+.box3{
+    grid-area: content;
+}
+.box4{
+    grid-area:footer;
+}

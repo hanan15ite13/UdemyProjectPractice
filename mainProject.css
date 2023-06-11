@@ -1,0 +1,79 @@
+/* body{
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+} */
+header h1{
+    display: inline-block;
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    margin: 20px 32px;
+    font-weight: bold;
+    margin-left: 9px;
+}
+header nav{
+    display: inline-block;
+    margin-left: -66px;
+}
+header nav li{
+    display: inline-block;
+    
+}
+header nav li a{
+    text-decoration: none;
+    font-family: 'Cormorant', serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 8px;
+}
+header nav li a.active{
+    border-bottom: 2px solid black;
+}
+
+.card{
+display: inline-block;
+box-sizing: border-box;
+margin: 30px 10px 20px 9px;
+}
+.card img{
+    width: 850px;
+    height: 450px;
+}
+h2{
+    /* font-weight: 300; */
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0px;
+}
+.fotter{
+    margin: 70px 0px  100px 200px;
+}
+.about{
+    width: 20%;
+    min-height: 100px;
+}
+.about h2{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter
+}
+.about h3{
+    font-weight: 300;
+    padding-bottom: 2px;
+    border-bottom: black 2px solid;
+    display: inline-block;
+}
+#mail{
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+#phnumber{
+    margin-top: 0px;
+    font-size: 12px;
+}
+.contact{
+    margin-top: 50px;
+}
+.card a:hover{
+    opacity: 0.5;
+}

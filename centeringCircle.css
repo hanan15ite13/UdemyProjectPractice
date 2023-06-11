@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.centeringCircle{
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+}
+.centeringCircle::before{
+    content: "";
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    background-color:yellow;
+    position: relative;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    transform: translate(50%,50%);
+}

@@ -1,0 +1,7 @@
+h1{
+    color: blue;
+}
+/* The below sytle will be applied to the content. */
+h1{
+color: red;
+}

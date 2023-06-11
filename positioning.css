@@ -1,0 +1,33 @@
+.special{
+    width:300px;
+    height: 300px;
+    background-color: yellow;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /* position: absolute;
+    top: 0px;
+    left: 0px; */
+
+} 
+.box1{
+    width: 300px;
+    height: 300px;
+ display: inline-block;
+    background-color: black;
+}
+.box2{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: rgb(126, 13, 13);
+    position: relative;
+    /* position: absolute; */
+}
+p{
+    /* position: relative;
+    position:absolute ; */
+    right: 0px;
+    bottom: 0px;
+}

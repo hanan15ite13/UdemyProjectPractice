@@ -1,0 +1,37 @@
+.animations{
+    height: 400px;
+    width: 400px;
+    background-color: chocolate;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* border-radius: 50%; */
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        background-color: violet;
+        
+
+    }
+    20%{
+        transform: rotate(40deg);
+        background-color: indigo;
+        /* transform: translateX(200px); */
+    }
+    40%{
+        transform: rotate(80deg);
+        background-color: blue;
+        /* transform: translateX(300px); */
+    }
+    50%{
+        transform: rotate(100deg);
+        background-color: green;
+        /* transform: translateX(400px); */
+    }
+}

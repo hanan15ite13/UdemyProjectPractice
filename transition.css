@@ -1,0 +1,14 @@
+.btn{
+    text-decoration: none;
+    border: 2px solid black;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    transition: background-color 3s, color 5s, transform 3s ease-in-out;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+    transform: translateX(100px);
+        /* transition: background-color 3s; */
+}
